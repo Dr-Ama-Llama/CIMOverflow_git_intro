@@ -6,4 +6,4 @@ Isla_0517 <- read.csv(url(weather_data), sep = ";")
 
 ggplot(Isla_0517, aes(Day, High))+
 	geom_point(aes(color = High)) +
-	theme(legend.position = "bottom")
+	theme(legend.position = "bottom") + theme(axis.text.x = element_text(angle = 45))
